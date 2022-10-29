@@ -1,0 +1,267 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+:root{
+  font-size: 62.5%;
+}
+header{
+  width: /*144rem*/ 100%;
+  height: 46.5rem;
+
+  background-color: #293241;
+
+  padding-top: 10.7rem;
+}
+
+header h1{
+  font-family: 'Staatliches', cursive;
+  font-size: 3.6rem;
+}
+
+header p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+h1, p{
+  text-align: center;
+  font-weight: 400;
+
+  color: #FFFFFF;
+}
+.text-inicial{
+  width: 39.1rem;
+  height: 9.1rem;
+
+  margin: 0 52.5rem 0 52.4rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+header svg{
+  margin-left: 58.9rem;
+  margin-bottom: 3.2rem;
+}
+
+body{
+  background: #BFD7E4;
+}
+header::before{
+  background-color: #F67669;
+
+  position: absolute;
+  z-index: +1;
+  content: 'Informações Pessoais';
+
+  width: 75rem;
+  height: 13.3rem;
+  left: 34.5rem;
+  top: 33.2rem;
+
+  border-radius: 2.0rem 2.0rem 0 0;
+
+  /*Editando content*/
+  font-family: 'Staatliches',cursive;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*Fim content*/
+}
+form{
+  width: 75.0rem;
+  height: 107.5rem;
+
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 34.5rem;
+}
+fieldset{
+  border-style: none;
+}
+.wrapper{
+  width: 62.2rem;
+  height: 86.46rem;
+  margin: 3.166rem auto 6.374rem;
+}
+/*Ajustando cor do SPAN*/
+.input-wrapper span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  
+  color: #C1BCCC;
+
+  margin-left: 0.912rem;
+}
+
+/*Editando fieldset*/
+.input-wrapper input, select, textarea{
+  background: #FAFAFC;
+
+  box-sizing: border-box;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  padding: 1.2rem 2.4rem;
+}
+.input-wrapper label{ /*Estilizandos todas label's*/
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  color: #4E4958;
+}
+
+.input-wrapper .event-name, .event-lastname{
+  Width: 30rem;
+  Height: 5.553rem;
+
+  margin: 0.793rem  auto 1.626rem;
+}
+.input-wrapper .event-email{
+  width: 61.6rem;
+  height: 5.553rem;
+
+  margin: 0.793rem  auto;
+}
+
+.col-2{
+  display: flex;
+  gap: 1.5rem;  
+}
+
+/*Estilizando segundo fieldset(Informações MEntor)*/
+.fieldset-title{
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  
+  color: #253B51;
+
+  display: flex;
+  justify-content: center;
+}
+.line-1{
+  width: 62.2rem;
+  border: 0.1rem solid #E6E6F0;
+
+  margin: 0.793rem auto 3.173rem;
+}
+
+.input-wrapper .event-select{
+  width: 30rem;
+  height: 5.553rem;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3.173rem;
+  
+}
+
+.input-wrapper .event-feedback{
+  width: 60.8rem;
+  height: 16.659rem;
+
+  margin: 0.793rem 0rem 2.954rem;
+}
+.input-wrapper .event-checked {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  border-radius: 0.8rem;
+  border: 0.1rem solid black;
+  
+}
+#ajust-check-label{
+  display: flex;
+  justify-items: center;
+  gap: 0.8rem;
+}
+label::before{
+  display: none;
+}
+.event-checked-ajust{
+  padding-bottom: 0.8rem;
+}
+
+
+/*Estilizando terceiro fieldset*/
+.line-2{
+  width: 62.2rem;
+  border: 0.1rem solid #E6E6F0;
+
+  margin: 1rem auto 3.173rem;
+}
+.col-3{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.input-wrapper .event-date{
+  width: 30rem;
+  height: 5.553rem;
+}
+.input-wrapper .event-tstart, .event-tend{
+  width: 14rem;
+}
+
+/*estilizando botão*/
+.input-wrapper .event-button{
+  width: 62.2rem;
+  height: 5.1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+
+  background: #F67669;
+  border-radius: 8px;
+  border-style: none;
+
+  /*Mudando Fonte dentro botão*/
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  /* identical to box height, or 130% */
+
+
+  color: #FFFFFF;
+}
+.event-button:hover{
+  background: #e96152;
+}
+
+/*Espaçamento entre Fieldset 1, 2, 3*/
+.fieldset-1{/*Espaçamento do Primeiro fieldset*/
+  margin-bottom: 3.133rem;
+}
+.fieldset-2{
+  margin-bottom: 3.6rem;
+}
+.fieldset-3{
+  margin-bottom: 6.374rem;
+}
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
